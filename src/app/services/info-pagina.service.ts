@@ -21,8 +21,6 @@ export class InfoPaginaService {
   private cargarEquipo() {
 
     this.http.get('https://angular-html-39c74.firebaseio.com/equipo.json').subscribe((resp: any[]) => {
-      console.log('testando resposta');
-      console.log(resp);
 
       this.equipo = resp;
     });
